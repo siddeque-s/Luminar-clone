@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Hind", sans-serif;
 }
 
 .navlogo {
@@ -47,4 +48,11 @@
 .section1class{
   background: url(./assets/banner_bg.jpg) no-repeat center;
   background-size: cover;
+}
+.imagessection1right{
+  height: 50px;
+}
+.leaders h3{
+  background-color: #e7effc;
+  color: #39557e;
 }
