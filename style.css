@@ -13,7 +13,7 @@
   font-size: 16px;
 }
 
-
+/* navbar */
 .navbar .nav-link.nav-purple {
   color: #9116a1;
 }
@@ -40,4 +40,11 @@
     background-color: rgb(9, 9, 219);
     border: none;
     
+}
+
+
+/* sectiion 1 */
+.section1class{
+  background: url(./assets/banner_bg.jpg) no-repeat center;
+  background-size: cover;
 }
