@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      
+
 
 <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <!-- css -->
+  <!-- css -->
     <link rel="stylesheet" href="./style.css">
-
 <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,46 +19,49 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    
-    <a class="navbar-brand" href="#"><img class="img-fluid navlogo" src="./assets/logo_wide_2.png" alt="Logo Luminar"></a>
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid navlogo" src="./assets/logo_wide_2.png" alt="Logo Luminar">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a id="navhome" class="nav-link active nav-purple" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Placements</a>
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Courses</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">Blog</a>
-        </li><li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Placements</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Blog</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">Hire From Us</a>
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">About Us</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link active" aria-current="page" href="#">More</a>
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Contact</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Hire From Us</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link active nav-darkblue" aria-current="page" href="#">More</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <ul class="d-flex align-items-center">
+        <li class="navbtnli"><button class="navbtn">ENQUIRE NOW</button></li>
+        <li class="navbtnli"><button class="navbtn">BOOK A CALL BACK</button></li>
+      </ul>
     </div>
   </div>
 </nav>
-    
+
 </body>
 </html>

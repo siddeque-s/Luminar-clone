@@ -1,17 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navlogo {
+  height: 70px;
+}
+
+.nav-item {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
 }
 
 
-.navlogo{
-    height: 80px;
+.navbar .nav-link.nav-purple {
+  color: #9116a1;
 }
-/* #home{
+
+.navbar .nav-link.nav-darkblue {
+  color: #082a5e;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #9116a1;
+}
+.navbtnli{
+    margin-top: 10px;
+    list-style: none;
+   
+}
+.navbtn{
+    font-family: "Lexend Deca", sans-serif;
+    padding: 12px 18px 12px 18px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(9, 9, 219);
+    border: none;
     
-} */
-.nav-item{
-     font-family: "Lexend Deca", sans-serif;
-     font-size: 16px;
-     
 }
