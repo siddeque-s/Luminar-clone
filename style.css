@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Hind", sans-serif;
+  color: #39557e;
 }
 
 .navlogo {
@@ -11,7 +12,9 @@
 
 .nav-item {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+font-weight: 500;
+ 
 }
 
 /* navbar */
@@ -49,10 +52,81 @@
   background: url(./assets/banner_bg.jpg) no-repeat center;
   background-size: cover;
 }
-.imagessection1right{
-  height: 50px;
+
+.leaders {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.leaders h3{
+
+.h6leaders {
+  margin: 0;
+  padding: 8px 15px;
   background-color: #e7effc;
   color: #39557e;
+  border-radius: 5px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.imagessection1right {
+  height: 60px;
+  width: auto;
+}
+
+.left{
+  margin-left: 13%;
+}
+
+.left h1{
+  font-size: 55px;
+  font-weight: 620;
+  font-family: "Lexend Deca", sans-serif;
+  color: #082a5e;
+}
+.h1spanNo1{
+  color: #9116a1;
+}
+
+.left p{
+  font-weight: 400;
+}
+
+.btn{
+  background-color: #9900cc;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
+.haveQ p{
+  margin: 0;
+  padding: 0;
+}
+#hques{
+  font-weight: 550;
+
+}
+ 
+ #numCont{
+  font-weight: 900;
+  font-size: 20px;
+  color: #081a5e;
+  margin-left: 0;
+  padding-left: 0;
+ }
+ #numCont:hover{
+  color: #053885;
+ }
+
+
+.btnimagephone{
+  height: 53px;
+  width: 230px;
+  border: none;
+  background-color: transparent;
 }
