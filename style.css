@@ -130,3 +130,103 @@ font-weight: 500;
   border: none;
   background-color: transparent;
 }
+
+
+
+
+/* section 3 */
+ .unique{
+    background-color: rgb(214, 214, 244);
+    color: rgb(9, 9, 105);
+    width: 23%;
+    font-weight: 600;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+ }
+ 
+
+.courses{
+    list-style: none;
+    margin-right: 40px;
+    
+    display: flex;
+   
+}
+.courses li{
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+#listss{
+    color: blue;
+}
+#listss span{
+    position: relative;
+    top: -62px;
+    left: 40px;
+    color: #fdfdfd;
+    background-color: blue;
+}
+
+.textssafd{
+    color: rgb(4, 4, 102);
+}
+.textss{
+    color: rgb(116, 38, 116);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.badge-overlay {
+  position: absolute;
+  top: 203px;
+ 
+  z-index: 1;
+}
+
+.bg-pink {
+  background-color: #da6f95;
+  color: rgb(249, 243, 243);
+  padding: 5px 10px;
+   border-top-right-radius: 10px;
+ 
+  font-size: 0.8rem;
+}
+.card{
+    height: 484px;
+}
+
+.card img{
+    height: 229px;
+}
+.headingT{
+    text-decoration: none;
+    color: black;
+}
+.columns{
+    height: 484px;
+}
+.para{
+    margin-top: 39px;
+}
+
