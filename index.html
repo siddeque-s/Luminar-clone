@@ -1,605 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-      
-<!-- fontawesome -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <!-- css -->
-    <link rel="stylesheet" href="./style.css">
-<!-- google font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Hind:wght@300;400;500;600;700&family=Homemade+Apple&family=Lexend+Deca:wght@100..900&family=Lunasima:wght@400;700&family=Manufacturing+Consent&family=Merienda:wght@300..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Hind:wght@300;400;500;600;700&family=Homemade+Apple&family=Lexend+Deca:wght@100..900&family=Lunasima:wght@400;700&family=Manufacturing+Consent&family=Merienda:wght@300..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="img-fluid navlogo"
+            src="./assets/logo_wide_2.png"
+            alt="Logo Luminar"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-3">
+              <a
+                id="navhome"
+                class="nav-link active nav-purple"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >Placements</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >Hire From Us</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-darkblue"
+                aria-current="page"
+                href="#"
+                >More</a
+              >
+            </li>
+          </ul>
+          <ul class="d-flex align-items-center">
+            <li class="navbtnli">
+              <button class="navbtn">ENQUIRE NOW</button>
+            </li>
+            <li class="navbtnli">
+              <button class="navbtn">BOOK A CALL BACK</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</head>
-
-<body>
-  
-
-
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img class="img-fluid navlogo" src="./assets/logo_wide_2.png" alt="Logo Luminar">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item ms-3">
-          <a id="navhome" class="nav-link active nav-purple" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Courses</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Placements</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Blog</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">About Us</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Contact</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">Hire From Us</a>
-        </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link active nav-darkblue" aria-current="page" href="#">More</a>
-        </li>
-      </ul>
-      <ul class="d-flex align-items-center">
-        <li class="navbtnli"><button class="navbtn">ENQUIRE NOW</button></li>
-        <li class="navbtnli"><button class="navbtn">BOOK A CALL BACK</button></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- section1 -->
-<section id="section1" class="section1class">
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-6 d-flex">
-
-        
+    <!-- section1 -->
+    <section id="section1" class="section1class">
+      <div class="container-fluid megaparentsec1">
+        <div class="row">
+          <div class="col-6 d-flex">
             <div class="animationimage">
-          <img class="imagessection1right" src="./assets/bshape_01.png" alt="">
-        </div>
+              <img
+                class="imagessection1right"
+                src="./assets/bshape_01.png"
+                alt=""
+              />
+            </div>
 
-       
-          
-         
-          <div class="left">
-          <div class="leaders d-flex">
-            
-            <h6 class="h6leaders">🏆 Leaders in Education Since 6 Years</h6>
-            <img class="imagessection1right" src="./assets/bshape_02.png" alt="">
-          </div>
-          <h1>
-            Kerala's <span class="h1spanNo1">No.1</span>  Software Training Institute
-          </h1>
-          <br>
-          <p>
-            Best software training institute in Kochi, Trivandrum & Calicut. Job-ready tech skills for your career As the best software training institute in Kochi, we're committed to your career success through industry-relevant curriculum and hands-on training.
-          </p>
-          <div class="leftbtn d-flex">
-            <button class="btn">EXPLORE COURSES  <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
-            
-              <button class="d-flex ms-4 btnimagephone">
-                <img class="img-fluid imagephone" src="./assets/call.png" alt="">
-              <div class="haveQ ms-2">
-                <p id="hques">Have any questions ?</p>
-                <p id="numCont">80 86 65 16 51</p>
+            <div class="left">
+              <div class="leaders d-flex">
+                <h6 class="h6leaders">🏆 Leaders in Education Since 6 Years</h6>
+                <img
+                  class="imagessection1right"
+                  src="./assets/bshape_02.png"
+                  alt=""
+                />
               </div>
-              </button>
-              
-            
+              <h1>
+                Kerala's <span class="h1spanNo1">No.1</span> Software Training
+                Institute
+              </h1>
+              <br />
+              <p>
+                Best software training institute in Kochi, Trivandrum & Calicut.
+                Job-ready tech skills for your career As the best software
+                training institute in Kochi, we're committed to your career
+                success through industry-relevant curriculum and hands-on
+                training.
+              </p>
+              <div class="leftbtn d-flex">
+                <button class="btn">
+                  EXPLORE COURSES
+                  <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+                </button>
+
+                <button class="d-flex ms-4 btnimagephone">
+                  <img
+                    class="img-fluid imagephone"
+                    src="./assets/call.png"
+                    alt=""
+                  />
+                  <div class="haveQ ms-2">
+                    <p id="hques">Have any questions ?</p>
+                    <p id="numCont">80 86 65 16 51</p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 rightsect1">
+            <img id="flower"
+              class="imagessection1right"
+              src="./assets/bshape_05.png"
+              alt=""
+            />
+
+            <div class="sec1right">
+              <div class="reighttopsec1">
+                <img id="python"
+                  class="imagessection1right"
+                  src="./assets/bshape_03.png"
+                  alt=""
+                />
+                <img id="angular"
+                  class="imagessection1right"
+                  src="./assets/bshape_04.png"
+                  alt=""
+                />
+              </div>
+              <br>
+              <br>
+              <br>
+
+              <div class="rightbottom">
+                <!-- just simplw a back color to identify -->
+
+                <div class="parentridhtrelative">
+                   <div class="sec1RightPlacementParent">
+                  <div class="sec1RightPlacementParent2">
+                    <div class="section1RightPlacement">
+                      <i
+                        class="fa-solid fa-graduation-cap section1righticon"
+                        style="color: #ffffff"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <p class="section1RightPlacementp">Placements</p>
+                  <h2 class="section1RightPlacementh2">8000+</h2>
+                </div>
+
+
+                <img class="imagegirl img-fluid" src="./assets/banner_img-girl.png" alt="" />
+
+                <div class="sec1righttechparent">
+                  <div class="parentnewridgttec">
+                    <div class="sec1righttechparent2">
+                      <div class="sectionRight1tech">
+                        <i
+                          class="fa-solid fa-microchip section1righticon"
+                          style="color: #ffffff"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <p class="section1RightPlacementp">Total Technologies</p>
+                    <h2 class="section1RightPlacementh2">30+</h2>
+                  </div>
+                </div>
+
+
+                </div>
+
+               
+                
+              </div>
+            </div>
           </div>
         </div>
-       
-
-
-        
-
-
-
-        
-        
       </div>
-      <div class="col-6">
-        <img src="./assets/bshape_05.png" alt="">
+    </section>
 
-        <div class="sec1right">
-          <div class="reighttopsec1">
-            <img src="./assets/bshape_03.png" alt="">
-            <img src="./assets/bshape_04.png" alt="">
+    <!-- section 3 -->
+    <section id="section3">
+      <div class="container">
+        <br /><br /><br /><br /><br />
 
-          </div>
-          <div class="rightbottom">
-            <!-- just simplw a back color to identify -->
-            <div style="background-color: blanchedalmond;">
-              <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i>
-            </div>
-            <div style="background-color: blue;">
-              <i class="fa-solid fa-microchip" style="color: #ffffff;"></i>
-            </div>
-            <img src="./assets/banner_img-girl.png" alt="">
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-<!-- section 3 -->
- <section id="section3">
-  <div class="container">
-      
-      <br><br><br><br><br>
-      
-        <p class="unique ">
-          <span>
-             10+ Unique Online & Offline Courses
-
-          </span>
-         
+        <p class="unique">
+          <span> 10+ Unique Online & Offline Courses </span>
         </p>
-      
-      <div class="parent d-flex justify-content-between">
-        <h1 class="textssafd">Our <span class="textss">Featured</span> Courses</h1>
-        <ul class="courses">
-          <li id="listss">
-            <p>All Courses</p>
-            <span class="badge">New</span>
-          </li>
-          <li>New One</li>
-          <li>Recommended</li>
-          <li>Most Placed</li>
-        </ul>
-      </div>
-      <div class="cards">
-        <div class="row g-4">
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink">Recommended</span>
-              </div>
 
-              <img
-                src="./assets/1704974672404.jpeg"
-                class="card-img-top"
-                alt="..."
-              />
+        <div class="parent d-flex justify-content-between">
+          <h1 class="textssafd">
+            Our <span class="textss">Featured</span> Courses
+          </h1>
+          <ul class="courses">
+            <li id="listss">
+              <p>All Courses</p>
+              <span class="badge">New</span>
+            </li>
+            <li>New One</li>
+            <li>Recommended</li>
+            <li>Most Placed</li>
+          </ul>
+        </div>
+        <div class="cards">
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink">Recommended</span>
+                </div>
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 11 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 5 Months
+                <img
+                  src="./assets/1704974672404.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 11 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 5 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      Software Testing Training - Manual & Automation
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.88)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    Software Testing Training - Manual & Automation
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.88)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
-          <!-- recomended -->
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink">Recommended</span>
-              </div>
+            <!-- recomended -->
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink">Recommended</span>
+                </div>
 
-              <img
-                src="./assets/mearn (1).jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/mearn (1).jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 6 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 6 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 6 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 6 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      MEA(R)N Stack Web Development Expert
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.98)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    MEA(R)N Stack Web Development Expert
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.98)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <!-- new one -->
+            <!-- new one -->
 
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink bg-primary" style>New One</span>
-              </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink bg-primary" style>New One</span>
+                </div>
 
-              <img src="./assets/robotic.jpeg" class="card-img-top" alt="..." />
+                <img
+                  src="./assets/robotic.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 9 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 5 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 9 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 5 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">Robotics with AI & IoT Training</h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.98)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="para text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">Robotics with AI & IoT Training</h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.98)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="para text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <!-- most placed -->
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink bg-warning" style>Most Placed</span>
-              </div>
+            <!-- most placed -->
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink bg-warning" style>Most Placed</span>
+                </div>
 
-              <img
-                src="./assets/django-course-thumbnail.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/django-course-thumbnail.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 5 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 6.5 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 5 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 6.5 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      Python Django - React - Full Stack Web Development Expert
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.67)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    Python Django - React - Full Stack Web Development Expert
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.67)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink">Recommended</span>
-              </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink">Recommended</span>
+                </div>
 
-              <img
-                src="./assets/ds_cjuFo7i.jpeg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/ds_cjuFo7i.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 10 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 7 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 10 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 7 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      PYTHON DATA SCIENCE - ML - AI - & Power BI
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.98)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    PYTHON DATA SCIENCE - ML - AI - & Power BI
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.98)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink bg-warning" style>Most Placed</span>
-              </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink bg-warning" style>Most Placed</span>
+                </div>
 
-              <img
-                src="./assets/spring_M2WFgIG.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+                <img
+                  src="./assets/spring_M2WFgIG.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 8 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 4 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 8 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 4 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      Java Spring Full Stack Development
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.67)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="para text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">Java Spring Full Stack Development</h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.67)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="para text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink bg-warning" style>Most Placed</span>
-              </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink bg-warning" style>Most Placed</span>
+                </div>
 
-              <img src="./assets/asp.net.jpg" class="card-img-top" alt="..." />
+                <img
+                  src="./assets/asp.net.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 9 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 5 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 9 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 5 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      Asp.net MVC with Angular - Full Stack
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.67)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="para text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    Asp.net MVC with Angular - Full Stack
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.67)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="para text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink bg-primary" style>New One</span>
-              </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink bg-primary" style>New One</span>
+                </div>
 
-              <img src="./assets/robotic.jpeg" class="card-img-top" alt="..." />
+                <img
+                  src="./assets/robotic.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 4 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 4 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 4 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 4 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      Python Data Analytics with Power BI
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.98)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="para text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    Python Data Analytics with Power BI
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.98)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="para text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6 col-xl-4">
-            <div class="card position-relative" style="width: 24rem">
-              <div class="badge-overlay">
-                <span class="bg-pink">Recommended</span>
-              </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card position-relative" style="width: 24rem">
+                <div class="badge-overlay">
+                  <span class="bg-pink">Recommended</span>
+                </div>
 
-              <img src="./assets/flutter.webp" class="card-img-top" alt="..." />
+                <img
+                  src="./assets/flutter.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
 
-              <div class="card-body">
-                <div class="mod d-flex">
-                  <p><i class="fa-solid fa-file"></i> 4 Modules</p>
-                  <p class="ms-4">
-                    <i class="fa-regular fa-clock"></i> 5 Months
+                <div class="card-body">
+                  <div class="mod d-flex">
+                    <p><i class="fa-solid fa-file"></i> 4 Modules</p>
+                    <p class="ms-4">
+                      <i class="fa-regular fa-clock"></i> 5 Months
+                    </p>
+                  </div>
+
+                  <a href="#" class="headingT">
+                    <h5 class="card-title">
+                      Best Flutter Training In Kochi (Cochin) & Calicut
+                      (Kozhikode)
+                    </h5>
+                  </a>
+
+                  <div class="stars d-flex align-items-center">
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd700"></i>
+                    <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
+                    <p class="mb-0">(4.98)</p>
+                  </div>
+
+                  <p class="card-text mt-2">
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                    100% Placement Assistance
+                    <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
+                  </p>
+
+                  <p class="text-center">
+                    <a href="#" class="seem btn fw-bolder">See More...</a>
                   </p>
                 </div>
-
-                <a href="#" class="headingT">
-                  <h5 class="card-title">
-                    Best Flutter Training In Kochi (Cochin) & Calicut
-                    (Kozhikode)
-                  </h5>
-                </a>
-
-                <div class="stars d-flex align-items-center">
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd700"></i>
-                  <i class="fa-solid fa-star me-2" style="color: #ffd700"></i>
-                  <p class="mb-0">(4.98)</p>
-                </div>
-
-                <p class="card-text mt-2">
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                  100% Placement Assistance
-                  <i class="fa-solid fa-trophy" style="color: #ffd700"></i>
-                </p>
-
-                <p class="text-center">
-                  <a href="#" class="seem btn fw-bolder">See More...</a>
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
- </section>
-</body>
+    </section>
+  </body>
 </html>
