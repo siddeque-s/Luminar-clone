@@ -1,4 +1,5 @@
 /* Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,11 @@
 .navbar .nav-link.nav-darkblue {
   color: #082a5e;
 }
-
+.navbar-brand img {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 /* Hover effect */
 .navbar .nav-link:hover {
   color: #9116a1;
@@ -35,7 +40,7 @@
 }
 .navbtn {
   font-family: "Lexend Deca", sans-serif;
-  padding: 12px 18px 12px 18px;
+  padding: 12px 18px;
   margin-left: 10px;
   border-radius: 10px;
   color: white;
@@ -43,8 +48,7 @@
   border: none;
 }
 
-/* sectiion 1 */
-/* Section background */
+/* section 1 */
 .section1class {
   position: relative;
   z-index: 0;
@@ -54,19 +58,27 @@
 .section1class::before {
   content: "";
   position: absolute;
-  inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0 */
+  inset: 0;
   background: url(./assets/banner_bg.jpg) no-repeat right center;
   background-size: cover;
   z-index: -1;
 }
-.megaparentsec1{
+.megaparentsec1 {
   margin-top: 10%;
+}
+
+.animationimage {
+  margin-right: 20px;
 }
 
 .leaders {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.bshape-02 {
+  margin-bottom: 10px;
 }
 
 .h6leaders {
@@ -87,7 +99,8 @@
 }
 
 .left {
-  margin-left: 13%;
+  margin-left: 20%;
+  margin-top: -10%;
 }
 
 .left h1 {
@@ -112,35 +125,46 @@
   border-radius: 10px;
   font-weight: 600;
   border: none;
+  white-space: nowrap;
 }
 
-.haveQ p {
-  margin: 0;
-  padding: 0;
+.haveQ {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #hques {
   font-weight: 550;
+  font-size: 14px;
+  margin-bottom: 4px;
 }
 
 #numCont {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
   color: #081a5e;
+  white-space: nowrap;
 }
 
-/* .rightsect1{
-  margin-top: 0;
-} */
 #numCont:hover {
   color: #053885;
 }
 
 .btnimagephone {
-  height: 53px;
-  width: 230px;
-  border: none;
+  padding: 8px 12px;
   background-color: transparent;
+  min-width: 230px;
+  align-items: flex-start;
+}
+
+.imagephone {
+  height: 24px;
+  align-self: center;
+}
+
+.leftbtn {
+  justify-content: center;
 }
 
 .section1RightPlacement,
@@ -165,7 +189,7 @@
   font-size: 30px;
 }
 
-.sec1RightPlacementParent{
+.sec1RightPlacementParent {
   height: 150px;
   width: 170px;
   background-color: #fff;
@@ -176,8 +200,8 @@
   z-index: 2;
   top: 10%;
   left: 12%;
-
 }
+
 .sec1righttechparent {
   height: 100px;
   width: 170px;
@@ -189,14 +213,6 @@
   z-index: 2;
   top: 250px;
   left: 74%;
-  
-}
-
-
-
-.sec1righttechparent {
-  bottom: 0;
-  right: 0;
 }
 
 .sec1RightPlacementParent2,
@@ -205,7 +221,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  
 }
 
 .imagegirl {
@@ -227,7 +242,8 @@
   margin: 0;
   color: #053885;
 }
-.parentnewridgttec{
+
+.parentnewridgttec {
   position: relative;
   top: -50px;
 }
@@ -235,30 +251,24 @@
 .parentridhtrelative {
   position: relative;
   height: 500px;
-
-  
 }
 
-#flower{
+#flower {
   position: absolute;
-  top: 40%;
+  top: 50%;
 }
 
-
-#python{
+#python {
   position: absolute;
   margin-left: 15%;
+  margin-top: -70px;
 }
-#angular{
+
+#angular {
   position: absolute;
   margin-left: 37%;
   margin-top: 3%;
 }
-
-
-
-
-
 
 /* section 3 */
 .unique {
@@ -273,9 +283,9 @@
 .courses {
   list-style: none;
   margin-right: 40px;
-
   display: flex;
 }
+
 .courses li {
   margin-left: 20px;
   font-weight: 600;
@@ -284,6 +294,7 @@
 #listss {
   color: blue;
 }
+
 #listss span {
   position: relative;
   top: -62px;
@@ -295,6 +306,7 @@
 .textssafd {
   color: rgb(4, 4, 102);
 }
+
 .textss {
   color: rgb(116, 38, 116);
 }
@@ -302,7 +314,6 @@
 .badge-overlay {
   position: absolute;
   top: 203px;
-
   z-index: 1;
 }
 
@@ -311,9 +322,9 @@
   color: rgb(249, 243, 243);
   padding: 5px 10px;
   border-top-right-radius: 10px;
-
   font-size: 0.8rem;
 }
+
 .card {
   height: 484px;
 }
@@ -321,13 +332,215 @@
 .card img {
   height: 229px;
 }
+
 .headingT {
   text-decoration: none;
   color: black;
 }
+
 .columns {
   height: 484px;
 }
+
 .para {
   margin-top: 39px;
+}
+
+/* Responsive adjustments for screens below 992px */
+@media (max-width: 991.98px) {
+  .col-12.order-1 {
+    order: 1;
+  }
+  .col-12.order-2 {
+    order: 2;
+  }
+  .megaparentsec1 {
+    margin-top: 6%;
+    padding: 10px 0;
+  }
+  .left {
+    margin-left: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .left h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .left p {
+    font-size: 14px;
+  }
+  .leaders {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .h6leaders {
+    text-align: center;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    min-width: 160px;
+  }
+  .btnimagephone {
+    padding: 8px 12px;
+    min-width: 230px;
+    align-items: flex-start;
+  }
+  .haveQ {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #hques, #numCont {
+    font-size: 12px;
+  }
+  .imagephone {
+    height: 24px;
+    align-self: center;
+  }
+  .imagessection1right {
+    height: 60px;
+  }
+  .parentridhtrelative {
+    height: auto;
+    min-height: 350px;
+    padding-top: 120px;
+    text-align: center;
+  }
+  .reighttopsec1 {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #python,
+  #angular,
+  #flower {
+    position: static;
+    margin: -10px 5px 5px 5px;
+    display: inline-block;
+  }
+  .imagegirl {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 400px;
+  }
+  .sec1RightPlacementParent {
+    top: 10px;
+    left: 15%;
+    width: 170px;
+    height: 150px;
+    padding-top: 20px;
+  }
+  .sec1righttechparent {
+    top: 120px;
+    left: 55%;
+    width: 170px;
+    height: 100px;
+    padding-top: 20px;
+  }
+  .section1RightPlacement,
+  .sectionRight1tech {
+    height: 60px;
+    width: 60px;
+  }
+  .section1righticon {
+    font-size: 30px;
+  }
+  .section1RightPlacementh2,
+  .section1RightPlacementp {
+    font-size: 14px;
+  }
+  .unique {
+    width: 60%;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .courses {
+    flex-direction: column;
+    margin-right: 0;
+    align-items: center;
+  }
+  .courses li {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  .courses li p {
+    margin-bottom: 0;
+  }
+  #listss span {
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .card {
+    width: 100% !important;
+    height: auto;
+    margin: 0 auto;
+  }
+  .card img {
+    height: 180px;
+  }
+  .badge-overlay {
+    top: 160px;
+  }
+}
+
+/* Additional mobile adjustments for smaller screens */
+@media (max-width: 576px) {
+  .left h1 {
+    font-size: 28px;
+  }
+  .left p {
+    font-size: 12px;
+  }
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    min-width: 140px;
+  }
+  .btnimagephone {
+    padding: 6px 8px;
+    min-width: 180px;
+  }
+  #hques, #numCont {
+    font-size: 10px;
+  }
+  .imagephone {
+    height: 20px;
+    align-self: center;
+  }
+  .imagessection1right {
+    height: 60px;
+  }
+  .h6leaders {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .parentridhtrelative {
+    min-height: 300px;
+    padding-top: 100px;
+  }
+  .imagegirl {
+    max-height: 400px;
+  }
+  .sec1RightPlacementParent {
+    width: 170px;
+    height: 150px;
+    top: 5px;
+    left: 10%;
+  }
+  .sec1righttechparent {
+    width: 170px;
+    height: 100px;
+    top: 90px;
+    left: 50%;
+  }
+  .unique {
+    width: 80%;
+  }
 }
