@@ -269,6 +269,7 @@
   margin-left: 37%;
   margin-top: 3%;
 }
+/* section 3 */
 
 /* section 3 */
 .unique {
@@ -454,6 +455,11 @@
   .section1RightPlacementp {
     font-size: 14px;
   }
+
+/* section2 */
+
+
+/* section3 */
   .unique {
     width: 60%;
     font-size: 14px;
@@ -488,6 +494,9 @@
   .badge-overlay {
     top: 160px;
   }
+ .title-line1, .title-line2{ display: block; }
+  .title-line2{ white-space: normal; } 
+
 }
 
 /* Additional mobile adjustments for smaller screens */
@@ -544,3 +553,73 @@
     width: 80%;
   }
 }
+
+
+/* section5 */
+/* Center the content (optional) */
+#section5 .container { text-align: center; }
+
+/* Your pill */
+.sec5h1{
+  margin: 0;
+  padding: 8px 20px;
+  background-color: #e7effc;
+  color: #39557e;
+  border-radius: 5px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Heading */
+.hero-title{
+  margin: 12px 0 0;
+  line-height: 1.2;
+  font-weight: 700;
+  /* fluid size: scales with viewport */
+  font-size: clamp(24px, 4vw, 44px);
+  /* nicer automatic wrapping on modern browsers */
+  text-wrap: balance;
+}
+
+/* default: keep both parts on one line if space allows */
+.title-line1, .title-line2{
+  display: inline;
+}
+
+/* prevent awkward splits inside the second phrase on wide screens */
+.title-line2{ white-space: nowrap; }
+
+
+/* section 5 */
+.aparentsec5Box{
+  width: 100%;
+}
+
+.icinsec5{
+  font-size: 30px;
+  color: #0056b3;
+}
+.sec5h4new{
+color: #082a5e;
+font-size: 23px;
+font-weight: 800;
+}
+.title-line1{
+  color: #082a5e;
+  font-size: 40px;
+  
+}
+.title-line2{
+   color: #0056b3;
+   font-size: 41px;
+}
+.parentsec5icondad{
+  
+  margin: 3% 5%;
+}
+
+
+
