@@ -594,6 +594,9 @@
 
 
 /* section 5 */
+#section5{
+  margin-top: 10%;
+}
 .aparentsec5Box{
   width: 100%;
 }
@@ -622,4 +625,31 @@ font-weight: 800;
 }
 
 
+/* section 6 */
+#section6{
+  margin-top: 9%;
+}
+
+.parentsec6{
+  margin: 0% 5%;
+}
+.instSubsec5{
+  margin: 0;
+  padding: 0;
+}
+
+.insNameSec5{
+  margin: 0;
+  padding: 0;
+}
+
+.shareCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eebdff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
 
