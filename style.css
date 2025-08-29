@@ -628,7 +628,7 @@ font-weight: 800;
 /* section 6 */
 #section6{
   
-  margin: 8% 5%;
+  margin: 8% 10%;
 }
 
 
@@ -670,3 +670,48 @@ font-weight: 800;
   color: #082a5e;
 }
 
+
+/* section 7 */
+#section7 {
+  margin: 8% 10%;
+}
+
+.section7parent {
+  width: 100%;
+  min-height: 38vh;  /* ensures at least this much height */
+  height: auto;      /* auto grows with content */
+  background-color: #9116a1;
+  border-radius: 10px;
+  position: relative;
+   /* needed for absolutely positioned images */
+}
+
+
+
+.image1Section7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.img2Section7 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sec7paragraph{
+  color: white;
+}
+.sec7h1{
+  color: white;
+}
+.sec7Parent2 > div {  
+  display: flex;  
+  justify-content: center;  /* horizontal center */  
+  align-items: center;      /* vertical center */  
+  text-align: center;       /* make text center aligned */  
+}
+.sec7h1, .sec7paragraph {
+  color: white;
+  margin: 0;
+}
