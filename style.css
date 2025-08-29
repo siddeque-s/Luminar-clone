@@ -753,3 +753,19 @@ font-weight: 800;
 }
 
 
+/* footer */
+.footermegaparent{
+  background-color: #061e43;   /* removes extra bottom space */
+}
+.footerimages1{
+  height: 70px;
+}
+.footerimages2{
+  height: 90px;
+}
+.footerimages3{
+  height: 90px;
+}
+.footerimages4{
+  height: 90px;
+}
