@@ -684,14 +684,15 @@ font-weight: 800;
 /* purple container: minimum 45% of the viewport height, can grow */
 .section7parent {
   width: 100%;
-  min-height: 45vh;     /* ← your requested base height */
-  height: auto;         /* allow it to grow when content wraps */
-  display: flex;        /* enables vertical centering of the row */
-  align-items: center;  /* vertically center the row inside the box */
+  min-height: 40vh;
+  height: auto;
+  display: flex;
+  align-items: center;
   background-color: #9116a1;
   border-radius: 10px;
   position: relative;
-  padding: 2rem;
+  /* padding: 2rem; */
+  overflow: hidden;   /* NEW */
 }
 
 /* row: fill available width, center content, wrap on small screens */
@@ -709,14 +710,24 @@ font-weight: 800;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 /* text */
-.sec7h1,
+.sec7h1{
+   color: #fff;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+  
+
+}
 .sec7paragraph {
   color: #fff;
   margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  
 }
 
 /* make any images behave nicely if you re-enable them */
@@ -725,3 +736,20 @@ font-weight: 800;
   height: auto;
   display: block;
 }
+
+.image1Section7 {
+  position: absolute;
+  bottom: -80%;   /* push down, but will be clipped */
+  right: -15%;    /* push right, clipped */
+  height: 150px;  /* visible size */
+  width: auto;
+}
+.img2Section7 {
+  position: absolute;
+  top: -12%;     /* push upward, clipped by parent */
+  left: 8%;    /* push left, clipped by parent */
+  height: 25% !important;  /* 👈 new size */
+  width: auto !important;   /* maintain aspect ratio */
+}
+
+
