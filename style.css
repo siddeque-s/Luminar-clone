@@ -672,46 +672,56 @@ font-weight: 800;
 
 
 /* section 7 */
+/* make sizing predictable */
+* { box-sizing: border-box; }
+
+/* outer wrapper */
 #section7 {
   margin: 8% 10%;
+  /* do NOT give a fixed height here */
 }
 
+/* purple container: minimum 45% of the viewport height, can grow */
 .section7parent {
   width: 100%;
-  min-height: 38vh;  /* ensures at least this much height */
-  height: auto;      /* auto grows with content */
+  min-height: 45vh;     /* ← your requested base height */
+  height: auto;         /* allow it to grow when content wraps */
+  display: flex;        /* enables vertical centering of the row */
+  align-items: center;  /* vertically center the row inside the box */
   background-color: #9116a1;
   border-radius: 10px;
   position: relative;
-   /* needed for absolutely positioned images */
+  padding: 2rem;
 }
 
-
-
-.image1Section7 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+/* row: fill available width, center content, wrap on small screens */
+.sec7Parent2 {
+  width: 100%;
+  display: flex;
+  align-items: center;     /* vertical center of columns */
+  justify-content: center; /* horizontal centering */
+  flex-wrap: wrap;         /* stacks on small screens */
 }
 
-.img2Section7 {
-  position: absolute;
-  top: 0;
-  right: 0;
+/* columns: center contents inside each column */
+.sec7Parent2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
-.sec7paragraph{
-  color: white;
-}
-.sec7h1{
-  color: white;
-}
-.sec7Parent2 > div {  
-  display: flex;  
-  justify-content: center;  /* horizontal center */  
-  align-items: center;      /* vertical center */  
-  text-align: center;       /* make text center aligned */  
-}
-.sec7h1, .sec7paragraph {
-  color: white;
+
+/* text */
+.sec7h1,
+.sec7paragraph {
+  color: #fff;
   margin: 0;
+}
+
+/* make any images behave nicely if you re-enable them */
+.section7parent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
