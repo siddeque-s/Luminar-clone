@@ -757,6 +757,12 @@ font-weight: 800;
 .footermegaparent{
   background-color: #061e43;   /* removes extra bottom space */
 }
+.footerparent1{
+  padding-top: 15vh;
+  margin-left: 3%;
+  padding-bottom: 7%;
+}
+
 .footerimages1{
   height: 70px;
 }
@@ -768,4 +774,41 @@ font-weight: 800;
 }
 .footerimages4{
   height: 90px;
+}
+
+.contactIconsFooter i{
+  color: white;
+}
+.contactIconsFooter i:hover{
+  color: rgb(202, 202, 202);
+}
+
+.footerheading{
+  color: white;
+  font-weight: 800;
+  margin-bottom: 6%;
+}
+.footera{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.footera:hover{
+  color: #05419c;
+
+}
+
+.footerbottomcontent{
+  margin-top: 2%;
+  padding-bottom: 1%;
+}
+
+.footera1{
+  text-decoration: none;
+  color: white;
+}
+.footerparalast{
+  font-size: 15px;
+  font-weight: 600;
+  color: #8798B3;
 }
