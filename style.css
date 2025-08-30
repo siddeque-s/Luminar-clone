@@ -122,20 +122,76 @@
   font-weight: 400;
 }
 
+
 .btn {
-  background-color: #9900cc;
-  color: white;
+  background-color: #9900cc ;
+  color: white !important;
   padding: 12px 30px;
   border-radius: 10px;
   font-weight: 600;
   border: none;
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
+
+
+.btn:hover {
+  background-color: #9900cc ;
+  color: white;
+  
+}
+
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;   
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  z-index: 1; 
+  pointer-events: none; 
+}
+
+
+.btn > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.btn:hover::before {
+  animation: shineMove 1s linear forwards;
+}
+
+@keyframes shineMove {
+  0% {
+    left: -75%;
+  }
+  50% {
+    left: 125%;
+  }
+  100% {
+    left: -75%; 
+  }
+}
+
 
 .haveQ {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 #hques {
@@ -160,6 +216,12 @@
   background-color: transparent;
   min-width: 230px;
   align-items: flex-start;
+}
+.btnimagephone:hover{
+  background-color: transparent !important;
+}
+.btnimagephone:hover::before {
+  animation: none !important;
 }
 
 .imagephone {
@@ -541,21 +603,22 @@
   }
   .imagegirl {
     position: absolute;
-    bottom: 0;
+    
+    top: -1%;
     left: 50%;
     transform: translateX(-50%);
     max-height: 400px;
   }
   .sec1RightPlacementParent {
     top: 10px;
-    left: 15%;
+    left: 19%;
     width: 170px;
     height: 150px;
     padding-top: 20px;
   }
   .sec1righttechparent {
-    top: 120px;
-    left: 55%;
+    top: 150px;
+    left: 65%;
     width: 170px;
     height: 100px;
     padding-top: 20px;
@@ -570,7 +633,7 @@
   }
   .section1RightPlacementh2,
   .section1RightPlacementp {
-    font-size: 14px;
+    font-size: 20px;
   }
 
 /* section2 */
