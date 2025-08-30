@@ -7,12 +7,14 @@
 }
 
 .navlogo {
-  height: 70px;
+  max-height: 70px;
+  min-height: 50px;
+  height: auto;
 }
 
 .nav-item {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -20,7 +22,9 @@
 .navbar .nav-link.nav-purple {
   color: #9116a1;
 }
-
+.navbar .nav-link {
+  white-space: nowrap;  
+}
 .navbar .nav-link.nav-darkblue {
   color: #082a5e;
 }
@@ -1467,4 +1471,49 @@ font-weight: 800;
 }
 #section2bottom{
   margin-left: 10%;
+}
+
+
+
+/* other fixed objects */
+.whatsappicons {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  animation: float 2s infinite ease-in-out; /* animation applied */
+}
+
+.whatsappimg {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: scale(1);   
+  }
+  50% {
+    transform: scale(1.2);  
+  }
+}
+
+
+.arrowicons{
+  width: 50px;
+  height: 50px;
+  background-color: #053885;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+ 
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 99;
 }
