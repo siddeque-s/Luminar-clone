@@ -1185,6 +1185,42 @@ font-weight: 800;
   color: #8798B3;
 }
 
+.parent2footcon{
+  margin-left: -30%;
+}
+.footercontactus{
+  text-decoration: none;
+}
+.footercontactus:hover{
+  background-color: #3e67a4;
+  padding: 10px 10px;
+  
+  
+  
+
+}
+
+.contentfoot{
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+.parent2footcon p{
+  margin: 0;
+  padding: 0;
+}
+.cardlistdown{
+  background-color: transparent;
+  border: none;
+}
+
+.contentfooter{
+  color: white;
+}
+.contentFootHeading{
+  color: white;
+  font-weight: 600;
+}
 
 
 
@@ -1423,4 +1459,12 @@ font-weight: 800;
   font-size: 15px;
   font-weight: 600;
   color: #8798B3;
+}
+
+.parentfooterContactUs{
+  margin-bottom: 20px;
+  
+}
+#section2bottom{
+  margin-left: 10%;
 }
