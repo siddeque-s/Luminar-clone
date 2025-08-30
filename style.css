@@ -593,6 +593,81 @@
 .title-line2{ white-space: nowrap; }
 
 
+
+
+
+
+/* section 4 */
+
+#section4 {
+  margin: 10% 10%; 
+}
+
+.parentsec4Mega3 {
+ 
+  width: 100%;
+  min-height: 60vh; /* ensures left column has space */
+}
+
+.sec4headingRight{
+  font-size: 40px;
+  color: #082A5E;
+}
+.sec4headingSpecialeffect{
+  font-size: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    color: #9116a1;
+
+}
+.iconssection4{
+  height: auto;
+  width: 150px;
+ 
+  margin-bottom: 10%;
+}
+.iconssection4 i{
+  font-size: 50px;
+}
+.contenticonsec4{
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+#shieldhuman{
+  color: #a724e4;
+}
+#filelines{
+  color: #219653;
+}
+
+#graduation{
+  color: #a724e4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* section 5 */
 #section5{
   margin-top: 10%;
