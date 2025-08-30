@@ -450,44 +450,59 @@
 /* section 3 */
 
 /* section 3 */
+#section3{
+  background-color: #f4f7fb;
+  padding-bottom: 8%;
+}
 .unique {
   background-color: rgb(214, 214, 244);
   color: rgb(9, 9, 105);
-  width: 23%;
+  width: 50%;
   font-weight: 600;
   border-radius: 5px;
   padding-left: 10px;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .courses {
   list-style: none;
   margin-right: 40px;
   display: flex;
+  flex-wrap: nowrap;   
 }
-
 .courses li {
   margin-left: 20px;
   font-weight: 600;
+  white-space: nowrap;  
 }
 
 #listss {
-  color: blue;
+  color: rgb(4, 4, 187);
+  position: relative; 
 }
 
-#listss span {
-  position: relative;
-  top: -62px;
-  left: 40px;
-  color: #fdfdfd;
-  background-color: blue;
+#listss sup span {
+  position: absolute;
+  top: -16px;   
+  right: -5px;  
+  color: #fff;
+  background-color: rgb(2, 2, 137);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  white-space: nowrap;
+  
 }
-
 .textssafd {
   color: rgb(4, 4, 102);
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .textss {
-  color: rgb(116, 38, 116);
+  color: #9116a1;
+  font-size: 43px;
+  font-weight: 600;
 }
 
 .badge-overlay {
@@ -641,27 +656,34 @@
 
 /* section3 */
   .unique {
+   
     width: 60%;
     font-size: 14px;
     padding: 8px;
+    margin: 3% auto;     /* centers the block itself */
+  text-align: center; /* centers the text inside */
   }
   .courses {
-    flex-direction: column;
-    margin-right: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
   }
   .courses li {
-    margin: 8px 0;
+    margin: 8px 20px;
     font-size: 14px;
+    white-space: nowrap;
   }
-  .courses li p {
-    margin-bottom: 0;
+  .textssafd{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
   }
-  #listss span {
-    top: 0;
-    left: 0;
-    margin-left: 10px;
-    font-size: 12px;
+   #listss sup .badge {
+    top: -18px;   
+    right: -10px;
+    font-size: 15px;
+    padding: 1px 4px;
   }
   .card {
     width: 100% !important;
