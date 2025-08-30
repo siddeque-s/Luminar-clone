@@ -507,25 +507,101 @@
 
 .badge-overlay {
   position: absolute;
-  top: 203px;
+  top: 191px;
   z-index: 1;
 }
-
 .bg-pink {
+  position: relative;
   background-color: #da6f95;
-  color: rgb(249, 243, 243);
+  color: #f9f3f3;
   padding: 5px 10px;
   border-top-right-radius: 10px;
   font-size: 0.8rem;
+  overflow: hidden;
+
+ 
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 100%; 
+  background-position: -100% 0; 
+
+  animation: shineBackground 2s linear infinite;
 }
+
+@keyframes shineBackground {
+  0% {
+    background-position: 100% 0; 
+  }
+  50% {
+    background-position: -200% 0; 
+  }
+  100% {
+    background-position: -200% 0; 
+  }
+}
+
+
+
 
 .card {
   height: 484px;
+  position: relative;
 }
 
-.card img {
+
+.card-img-wrapper {
+  position: relative;
   height: 229px;
+  overflow: hidden;
 }
+
+
+.card-img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card-img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+.card-img-wrapper:hover::before {
+  animation: shineMoveimg 0.5s linear forwards;
+}
+
+@keyframes shineMoveimg {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+ 
+}
+
 
 .headingT {
   text-decoration: none;
@@ -539,6 +615,27 @@
 .para {
   margin-top: 39px;
 }
+
+.seem {
+  background: transparent;
+  color: #39557E !important;
+  animation: none !important;    
+  transition: none !important;  
+}
+
+.seem:hover {
+  background-color: transparent !important;
+  animation: none !important;   
+  transition: none !important;  
+}
+
+.seem::before,
+.seem::after {
+  animation: none !important;  
+  transition: none !important;
+}
+
+
 
 /* Responsive adjustments for screens below 992px */
 @media (max-width: 991.98px) {
@@ -660,8 +757,8 @@
     width: 60%;
     font-size: 14px;
     padding: 8px;
-    margin: 3% auto;     /* centers the block itself */
-  text-align: center; /* centers the text inside */
+    margin: 3% auto;     
+  text-align: center; 
   }
   .courses {
     display: flex;
@@ -675,9 +772,15 @@
     white-space: nowrap;
   }
   .textssafd{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 5%; */
+    text-align: center;
+    font-size: 40px;
+  }
+  .textss{
+    font-size: 40px;
+
   }
    #listss sup .badge {
     top: -18px;   
@@ -694,7 +797,7 @@
     height: 180px;
   }
   .badge-overlay {
-    top: 160px;
+    top: 152px;
   }
  .title-line1, .title-line2{ display: block; }
   .title-line2{ white-space: normal; } 
