@@ -484,7 +484,18 @@
   }
 }
 
-/* section 3 */
+/* section 2 */
+.carousel-img {
+  max-height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%); 
+  transition: filter 0.3s ease; 
+}
+
+.carousel-img:hover {
+  filter: grayscale(0%); 
+}
+
 
 /* section 3 */
 #section3 {
