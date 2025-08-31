@@ -1510,3 +1510,79 @@ filter: grayscale(0%) brightness(1);
   right: 20px;
   z-index: 99;
 }
+
+
+
+/* contact fixed icon */
+.ContactFixedicon {
+  width: 150px;
+  height: 50px;
+  background-color: #139909;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  z-index: 99;
+  text-decoration: none;
+
+  opacity: 0;
+  transform: scale(0);
+
+  
+  animation: pulseAppear 11s ease-in-out infinite; 
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contactfixetext {
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+}
+
+
+@keyframes pulseAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(0.85);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
