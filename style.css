@@ -1472,6 +1472,38 @@ font-weight: 800;
 #section2bottom{
   margin-left: 10%;
 }
+.link-wrapper {
+  display: flex;          
+  align-items: center;
+  gap: 0;                   
+  margin-bottom: 10px;      
+  cursor: pointer;
+}
+
+.scroll {
+  height: 5px;
+  width: 0;                 
+  border-radius: 4px;
+  background-color: #05419c;
+  transition: width 0.3s ease; 
+}
+
+.link-wrapper:hover .scroll {
+  width: 15px;              
+}
+
+.footera1 {
+  margin-left: 10px;        
+  text-decoration: none;
+  color: #B2BDCD;;              
+  transition: color 0.3s;
+  font-size: 17px;
+}
+
+.link-wrapper:hover .footera1 {
+  color: #ffffff;           
+}
+
 
 
 
@@ -1517,3 +1549,5 @@ font-weight: 800;
   right: 20px;
   z-index: 99;
 }
+
+
