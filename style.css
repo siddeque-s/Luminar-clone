@@ -942,6 +942,55 @@ filter: grayscale(0%) brightness(1);
   white-space: nowrap;
 }
 
+
+
+/* instagram feed */
+.instfeedParent{
+  min-height: 230px;      
+  background-color: #f8f9fa;
+  padding: 40px 20px;     
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.instafeedh3{
+  font-size: clamp(24px, 5vw, 40px); 
+  font-weight: 620;
+  color: #082a5e;
+  margin: 0.5em 0;
+}
+
+.instafeedatag{
+  text-decoration: underline;
+  text-decoration-color:#9116a1 ;
+  color: #9116a1;
+}
+
+.spanh3inst{
+  color: #9116a1;
+}
+
+.spanh3inst i{
+  color: #9116a1;
+}
+
+
+.instfeedParent p {
+  font-size: clamp(14px, 2.5vw, 18px);
+  color: #082a5e;
+  margin: 0.5rem 0;
+}
+
+
+
+
+
+
+
 /* section 4 */
 
 #section4 {
@@ -1301,10 +1350,10 @@ filter: grayscale(0%) brightness(1);
 /* outer wrapper */
 #section7 {
   margin: 8% 10%;
-  /* do NOT give a fixed height here */
+  
 }
 
-/* purple container: minimum 45% of the viewport height, can grow */
+
 .section7parent {
   width: 100%;
   min-height: 40vh;
@@ -1318,16 +1367,16 @@ filter: grayscale(0%) brightness(1);
   overflow: hidden; /* NEW */
 }
 
-/* row: fill available width, center content, wrap on small screens */
+
 .sec7Parent2 {
   width: 100%;
   display: flex;
-  align-items: center; /* vertical center of columns */
-  justify-content: center; /* horizontal centering */
-  flex-wrap: wrap; /* stacks on small screens */
+  align-items: center; 
+  justify-content: center; 
+  flex-wrap: wrap; 
 }
 
-/* columns: center contents inside each column */
+
 .sec7Parent2 > div {
   display: flex;
   justify-content: center;
@@ -1350,7 +1399,7 @@ filter: grayscale(0%) brightness(1);
   font-weight: 600;
 }
 
-/* make any images behave nicely if you re-enable them */
+
 .section7parent img {
   max-width: 100%;
   height: auto;
@@ -1359,17 +1408,17 @@ filter: grayscale(0%) brightness(1);
 
 .image1Section7 {
   position: absolute;
-  bottom: -80%; /* push down, but will be clipped */
-  right: -15%; /* push right, clipped */
-  height: 150px; /* visible size */
+  bottom: -80%; 
+  right: -15%; 
+  height: 150px; 
   width: auto;
 }
 .img2Section7 {
   position: absolute;
-  top: -12%; /* push upward, clipped by parent */
-  left: 8%; /* push left, clipped by parent */
-  height: 25% !important; /* 👈 new size */
-  width: auto !important; /* maintain aspect ratio */
+  top: -12%; 
+  left: 8%; 
+  height: 25% !important; 
+  width: auto !important; 
 }
 
 /* footer */
@@ -1469,7 +1518,7 @@ filter: grayscale(0%) brightness(1);
   color: #ffffff;
 }
 
-/* other fixed objects */
+
 .whatsappicons {
   height: 60px;
   width: 60px;
@@ -1477,7 +1526,7 @@ filter: grayscale(0%) brightness(1);
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  animation: float 2s infinite ease-in-out; /* animation applied */
+  animation: float 2s infinite ease-in-out; 
 }
 
 .whatsappimg {
