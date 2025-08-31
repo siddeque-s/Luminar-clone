@@ -43,114 +43,90 @@
       href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Hind:wght@300;400;500;600;700&family=Homemade+Apple&family=Lexend+Deca:wght@100..900&family=Lunasima:wght@400;700&family=Merienda:wght@300..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-
-    
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            class="img-fluid navlogo"
-            src="./assets/logo_wide_2.png"
-            alt="Logo Luminar"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+     <nav class="navbar navbar-expand-xl bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- Logo always visible -->
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid navlogo" src="./assets/logo_wide_2.png" alt="Logo Luminar" />
+    </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ms-3">
-              <a
-                id="navhome"
-                class="nav-link active nav-purple"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >Courses</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >Placements</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >Blog</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >Contact</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >Hire From Us</a
-              >
-            </li>
-            <li class="nav-item ms-3">
-              <a
-                class="nav-link active nav-darkblue"
-                aria-current="page"
-                href="#"
-                >More</a
-              >
-            </li>
-          </ul>
-          <ul class="d-flex align-items-center">
-            <li class="navbtnli">
-              <button class="btn d-none d-xxl-block">ENQUIRE NOW</button>
-            </li>
-            <li class="navbtnli">
-              <button class="btn ms-3 d-none d-xxl-block">
-                BOOK A CALL BACK
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- Offcanvas toggle button visible below XL -->
+   <!-- Offcanvas toggle using image below XL screens -->
+<img 
+  src="./assets/togle.png" 
+  alt="Menu" 
+  class="d-xl-none img-fluid" 
+  style="cursor: pointer; height: 40px;margin-right: 6%;" 
+  data-bs-toggle="offcanvas" 
+  data-bs-target="#offcanvasRight" 
+  aria-controls="offcanvasRight"
+/>
+
+
+    <!-- Navbar items for XL and above -->
+    <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ms-3"><a id="navhome" class="nav-link active nav-purple" href="#">Home</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Courses</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Placements</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Blog</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">About Us</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Contact</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Hire From Us</a></li>
+        <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">More</a></li>
+      </ul>
+      <ul class="d-flex align-items-center">
+        <li class="navbtnli"><button class="btn d-none d-xxl-block">ENQUIRE NOW</button></li>
+        <li class="navbtnli"><button class="btn ms-3 d-none d-xxl-block">BOOK A CALL BACK</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas for below XL screens -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <!-- Logo at the top -->
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid navlogo" src="./assets/logo_wide_2.png" alt="Logo Luminar" />
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Nav Links -->
+    <ul class="navbar-nav offcanvarborder me-auto mb-2 mb-lg-0">
+      <li class="nav-item ms-3"><a id="navhome" class="nav-link active nav-purple" href="#">Home</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Courses</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Placements</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Blog</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">About Us</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Contact</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">Hire From Us</a></li>
+      <li class="nav-item ms-3"><a class="nav-link active nav-darkblue" href="#">More</a></li>
+    </ul>
+
+    <!-- Buttons side by side -->
+    <ul class="d-flex mt-3 gap-2">
+      <li class="navbtnli flex-fill">
+        <button class="btn w-100">ENQUIRE NOW</button>
+      </li>
+      <li class="navbtnli flex-fill">
+        <button class="btn w-100">BOOK A CALL BACK</button>
+      </li>
+    </ul>
+
+    <!-- Social icons -->
+    <div class="naviconsoffcanvas d-flex justify-content-center mt-4 gap-3">
+      <a href="" class="iconclassnav "><i class="fa-brands fa-instagram"></i></a>
+      <a href="" class="iconclassnav"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class="iconclassnav"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="" class="iconclassnav"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
 
     <!-- section1 -->
     <section id="section1" class="section1class">
@@ -1276,7 +1252,7 @@
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.984108429198!2d76.3400965745087!3d10.018169672722905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ffce877d5ef%3A0x8bef6870ad11b98!2sLuminar%20Technolab!5e0!3m2!1sen!2sin!4v1756594458584!5m2!1sen!2sin"
                       width="300"
                       height="200"
-                      style="border: 10px"
+                      style="border: 10px; border-radius: 10px;"
                       allowfullscreen=""
                       loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"
@@ -1375,8 +1351,6 @@
       <img class="whatsappimg" src="./assets/watst.png" alt="" />
     </div>
 
-   
-
     <a href="#section1">
       <div
         data-aos="fade-up"
@@ -1387,8 +1361,6 @@
         <i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
       </div>
     </a>
-
-
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
