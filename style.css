@@ -223,7 +223,13 @@
 #numCont:hover {
   color: #053885;
 }
+.bshape02:hover{
+  animation-play-state: paused;
+}
 
+.bshape01:hover{
+  animation-play-state: paused;
+}
 .btnimagephone {
   padding: 8px 12px;
   background-color: transparent;
