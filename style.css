@@ -5,6 +5,10 @@
   color: #39557e;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .navlogo {
   max-height: 70px;
   min-height: 50px;
